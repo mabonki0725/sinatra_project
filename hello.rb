@@ -1,10 +1,17 @@
 require 'sinatra'
 
-require './name'
+# require './name'
 
+get '/' do
+  code = "<%= Time.now %>"
+  erb code
+end
+
+=begin
 get '/' do
  erb :index
 end
+=end
 
 get '/' do 
 <<EOS
