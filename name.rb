@@ -1,11 +1,5 @@
 require 'sinatra'
 
-require './name'
-
-get '/' do
- erb :index
-end
-
 get '/' do 
 <<EOS
 <html>
@@ -13,8 +7,7 @@ get '/' do
   <title>AIIT Hello</title>
  </head>
  <body>
-  <H1>Hellow world, Nakai</H1>
-  こんにちは、これはHerokuで動作するWebアプリです
+  <H1>Hellow world, AIIT</H1>
  </body>
 </html>
 EOS
